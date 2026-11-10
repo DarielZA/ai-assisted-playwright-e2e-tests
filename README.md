@@ -84,4 +84,4 @@ Offline LLM-powered development workflows
 👨‍💻 Author
 
 Dariel Aguilar
-QA Automation Engineer
+QA Engineer
