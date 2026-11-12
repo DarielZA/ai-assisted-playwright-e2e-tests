@@ -81,7 +81,8 @@ Reusable architecture
 
 Offline LLM-powered development workflows
 
-👨‍💻 Author
+---
 
-Dariel Aguilar
-QA Engineer
+## Author
+
+**Dariel Aguilar** - QA Engineer
