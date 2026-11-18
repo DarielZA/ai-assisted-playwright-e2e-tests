@@ -12,21 +12,21 @@ Evidence-driven execution (videos & screenshots)
 
 Local AI-assisted testing workflows
 
-🧠 Tech Stack
+Tech Stack
 
-🧪 Playwright (Python)
+Playwright (Python)
 
-🐍 Python
+Python
 
-🤖 Ollama (Local LLM Runtime)
+Ollama (Local LLM Runtime)
 
-💡 DeepSeek Coder
+DeepSeek Coder
 
-🎥 Video & Screenshot Evidence
+Video & Screenshot Evidence
 
-🧱 Modular Test Helpers
+Modular Test Helpers
 
-📂 Project Structure
+Project Structure
 opencart-tests/
 ├── tests/
 │   ├── helpers.py
@@ -36,31 +36,31 @@ opencart-tests/
 │   └── test_logout.py
 ├── test-results/
 └── README.md
-⚙️ Setup
-1️⃣ Clone repository
+Setup
+1. Clone repository
 git clone https://github.com/DarielZA/ai-assisted-playwright-e2e-tests.git
 cd ai-assisted-playwright-e2e-tests
-2️⃣ Create virtual environment
+2. Create virtual environment
 python -m venv venv
 venv\Scripts\activate
-3️⃣ Install dependencies
+3. Install dependencies
 pip install playwright pytest
 playwright install chromium
-▶️ Run Tests
+Run Tests
 python -m pytest tests/ -v
 
 Execution generates:
 
-🎥 Video recordings
+Video recordings
 
-🖼 Screenshots
+Screenshots
 
 Console logs
 
 All stored inside:
 
 test-results/
-🤖 Local AI Workflow (Ollama + DeepSeek)
+Local AI Workflow (Ollama + DeepSeek)
 
 This project integrates a local coding model to assist with test generation and refactoring.
 
@@ -71,7 +71,7 @@ ollama run deepseek-coder:6.7b
 Example usage:
 
 optimize this playwright python test for maintainability
-🎯 Purpose
+Purpose
 
 This repository showcases how QA automation can evolve with local AI assistance, combining:
 
