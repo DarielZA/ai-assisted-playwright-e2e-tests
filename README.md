@@ -1,44 +1,11 @@
 # AI-Assisted Playwright E2E Tests
 
-Architecture-focused QA automation using local LLM augmentation.
+End-to-end UI tests in Python with Playwright, written with help from a local LLM (Ollama + DeepSeek Coder). The tests run against the [OrangeHRM demo site](https://opensource-demo.orangehrmlive.com/).
 
-End-to-end test automation built with **Playwright + Python**, enhanced with a local LLM workflow (**Ollama + DeepSeek**) to support test development and maintainability.
+## What's included
 
-This project demonstrates a clean QA automation setup focused on:
-
-- Maintainable test structure
-- Reusable helpers
-- Evidence-driven execution (videos & screenshots)
-- Local AI-assisted testing workflows
-
----
-
-## Tech Stack
-
-- **Playwright (Python)**
-- **Python**
-- **Ollama** (local LLM runtime)
-- **DeepSeek Coder**
-- Video & screenshot evidence
-- Modular test helpers
-
----
-
-## Project Structure
-
-```
-opencart-tests/
-├── tests/
-│   ├── helpers.py
-│   ├── test_opencart.py
-│   ├── test_search.py
-│   ├── test_add_user.py
-│   └── test_logout.py
-├── test-results/
-└── README.md
-```
-
----
+- Login, user search, add user and logout tests in `tests/`
+- A shared helper (`tests/helpers.py`) that opens the browser and saves a video recording and a screenshot of each run in `test-results/`
 
 ## Setup
 
@@ -60,49 +27,21 @@ pip install playwright pytest
 playwright install chromium
 ```
 
----
-
-## Run Tests
+## Run the tests
 
 ```bash
 python -m pytest tests/ -v
 ```
 
-Execution generates:
+## Local AI workflow
 
-- Video recordings
-- Screenshots
-- Console logs
-
-All stored inside `test-results/`.
-
----
-
-## Local AI Workflow (Ollama + DeepSeek)
-
-This project integrates a local coding model to assist with test generation and refactoring.
-
-Run locally:
+The local model runs with:
 
 ```bash
 ollama run deepseek-coder:6.7b
 ```
 
-Example usage:
-
-```
-optimize this playwright python test for maintainability
-```
-
----
-
-## Purpose
-
-This repository showcases how QA automation can evolve with local AI assistance, combining:
-
-- Traditional test automation practices
-- Reusable architecture
-- Offline LLM-powered development workflows
+Example prompt: `optimize this playwright python test for maintainability`
 
 ---
 
